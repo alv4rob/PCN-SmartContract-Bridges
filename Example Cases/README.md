@@ -6,7 +6,7 @@ Este directorio agrupa varios casos en los que se han aplicado las herramientas.
 
 Para facilitar la navegación, esta tabla agrupa el contenido de todos los casos:
 
-| PCN original (*.pcn*) | Descripción | Smart contract generado (*.sce*) | PCN generado (*.pcn*)
+| PCN original | Descripción | Smart contract generado | PCN generado
 | --- | --- | --- | --- |
 | [PCN_Deliveroo.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/Deliveroo/src/PCN_Deliveroo.pcn) | Caso basado en el proceso del servicio que ofrece Deliveroo, una de las compañías de entrega de comida más populares. | [PCN_Deliveroo.sce](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/Deliveroo/sce-gen/PCN_Deliveroo.sce) | [PCN_Deliveroo.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/Deliveroo/pcn-gen/PCN_Deliveroo.pcn)
 | [PCN_HealthClinic.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/HealthClinic/src/PCN_HealthClinic.pcn) | Caso basado en el servicio de un centro de salud y su interacción con el paciente y otras entidades relacionadas. | [PCN_HealthClinic.sce](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/HealthClinic/sce-gen/PCN_HealthClinic.sce) | [PCN_HealthClinic.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/HealthClinic/pcn-gen/PCN_HealthClinic.pcn)
