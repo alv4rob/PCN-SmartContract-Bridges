@@ -1,0 +1,15 @@
+# Casos de ejemplo
+Este directorio agrupa varios casos en los que se han aplicado las herramientas. Cada caso se encuentra en uno de los directorios, todos ellos con una estructura común formada por 3 directorios más:
+* ***src***: Aquí se encuentra el modelo **PCN original** usado como punto de partida.
+* ***sce-gen***: Aquí se encuentra el **smart contract** (modelo SmaC) **generado** por el puente PCN - smart contract a partir del modelo PCN orignal.
+* ***pcn-gen***: Aquí se encuentra el modelo **PCN generado** por el puente smart contract - PCN a partir del smart contract generado.
+
+Para facilitar la navegación, esta tabla agrupa el contenido de todos los casos:
+
+| PCN original (*.pcn*) | Descripción | Smart contract generado (*.sce*) | PCN generado (*.pcn*)
+| --- | --- | --- | --- |
+| [PCN_Deliveroo.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/Deliveroo/src/) | Caso basado en el proceso del servicio que ofrece Deliveroo, una de las compañías de entrega de comida más populares. | [PCN_Deliveroo.sce](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/Deliveroo/sce-gen/) | [PCN_Deliveroo.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/Deliveroo/pcn-gen/)
+| [PCN_HealthClinic.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/HealthClinic/src/) | Caso basado en el servicio de un centro de salud y su interacción con el paciente y otras entidades relacionadas. | [PCN_HealthClinic.sce](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/HealthClinic/sce-gen/) | [PCN_HealthClinic.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/HealthClinic/pcn-gen/)
+| [PCN_PizzaRestaurant.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/PizzaRestaurant/src/) | Caso centrado en el servicio que ofrece un restaurante especializado en pizzas y su trato con el cliente. | [PCN_PizzaRestaurant.sce](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/PizzaRestaurant/sce-gen/) | [PCN_PizzaRestaurant.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/PizzaRestaurant/pcn-gen/)
+| [PCN_PrimaryCarePhysician.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/PrimaryCarePhysician/src/) | Caso que gira en torno al proceso que sigue el servicio dado por una clínica de atención primaria. | [PCN_PrimaryCarePhysician.sce](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/PrimaryCarePhysician/sce-gen/) | [PCN_PrimaryCarePhysician.pcn](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Example%20Cases/PrimaryCarePhysician/pcn-gen/)
+
