@@ -17,7 +17,7 @@ Para transformar un modelo PCN en smart contract basta con hacer clic derecho so
 
 ![Puente PCN - Smart Contract](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Videos/PCN-SmartContract_Demo.gif)
 
-La herramienta se implementa en el paquete [*pcn.generator.sce*](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Plugins/es.kybele.elastic.models.pcn/src/pcn/generator/sce/) y sigue la siguiente arquitectura:
+La herramienta se implementa en el paquete [***pcn.generator.sce***](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Plugins/es.kybele.elastic.models.pcn/src/pcn/generator/sce/) y sigue la siguiente arquitectura:
 
 ![Arquitectura puente PCN - Smart Contract](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Images/PCN-SmartContract_Arch.png)
 
@@ -27,6 +27,6 @@ Para transformar un smart contract en modelo PCN basta con hacer clic derecho so
 
 ![Puente smart contract - PCN](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Videos/SmartContract-PCN_Demo.gif)
 
-La herramienta se implementa en el paquete [*sce.generator.pcn*](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Plugins/org.xtext.ui/src/sce/generator/pcn/) y sigue la siguiente arquitectura:
+La herramienta se implementa en el paquete [***sce.generator.pcn***](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Plugins/org.xtext.ui/src/sce/generator/pcn/) y sigue la siguiente arquitectura:
 
 ![Arquitectura puente smart contract - PCN](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Images/SmartContract-PCN_Arch.png)
