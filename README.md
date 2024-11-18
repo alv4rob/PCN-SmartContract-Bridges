@@ -1,32 +1,32 @@
-# Puentes tecnológicos entre PCN y smart contracts
+# Technological Bridges between PCN and Smart Contracts
 
-Se trata de un conjunto de herramientas que actúan como puentes tecnológicos entre la notación de negocio **PCN** (Process Chain Network) y los **smart contracts** con el objetivo de acercar esta tecnología a profesionales del negocio. Para ello, estas herramientas permiten transformar diagramas PCN en smart contracts escritos en Solidity y viceversa, ambos modelados bajo el paradigma MDE (Model Driven Engineering).
+This project is a set of tools that act as technological bridges between the business notation **PCN** (Process Chain Network) and **smart contracts**, aiming to bring this technology closer to business professionals. These tools enable the transformation of PCN diagrams into smart contracts written in Solidity and vice versa, both modeled under the MDE (Model-Driven Engineering) paradigm.
 
-Estas herramientas se construyen vinculadas a los siguientes plug-ins en el IDE Eclipse:
-* [**INNoVaServ**](https://github.com/franciscoperezb/innovaserv_toolkit): Entorno de modelado para el diseño de servicios que soporta varias notaciones de negocio.
+The tools are integrated with the following plugins in the Eclipse IDE:
+* [**INNoVaServ**](https://github.com/franciscoperezb/innovaserv_toolkit): A modeling environment for service design that supports various business notations.
 
-  A la definición de modelo PCN que incorpora este entorno se acopla un paquete que integra la funcionalidad del **puente PCN - smart contract**, con el que se pueden generar smart contracts en forma de modelo SmaC (*.sce*) a partir de modelos PCN (*.pcn*).
+  The PCN model definition provided by this environment includes a package that integrates the **PCN - smart contract bridge** functionality, enabling the generation of smart contracts in the form of SmaC models (*.sce*) from PCN models (*.pcn*).
   
-* [**SmaC**](https://github.com/CommITURJC/SmaC): DSL textual que soporta la codificación de smart contracts escritos en Solidity.
+* [**SmaC**](https://github.com/CommITURJC/SmaC): A textual DSL that supports the coding of smart contracts written in Solidity.
 
-  A la definición de este DSL (modelo SmaC) se acopla un paquete que integra la funcionalidad del **puente smart contract - PCN**, permitiendo generar modelos PCN (*.pcn*) a partir de smart contracts en forma de modelo SmaC (*.sce*) con un formato específico.
+  The definition of this DSL (SmaC model) includes a package that integrates the **smart contract - PCN bridge** functionality, allowing the generation of PCN models (*.pcn*) from smart contracts in the form of SmaC models (*.sce*) in a specific format.
 
-## Puente PCN - Smart contract
+## PCN - Smart Contract Bridge
 
-Para transformar un modelo PCN en smart contract basta con hacer clic derecho sobre el modelo PCN objetivo dentro del *Package Explorer* de Eclipse, clicar sobre el botón ***Generate Solidity code*** y rellenar los datos necesarios para generar el fichero *.sce* resultante dentro del directorio *sce-gen*.
+To transform a PCN model into a smart contract, simply right-click on the target PCN model in Eclipse's *Package Explorer*, select ***Generate Solidity code***, and fill in the required data to generate the resulting *.sce* file in the *sce-gen* directory.
 
-![Puente PCN - Smart Contract](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Videos/PCN-SmartContract_Demo.gif)
+![PCN - Smart Contract Bridge](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Videos/PCN-SmartContract_Demo.gif)
 
-La herramienta se implementa en el paquete [***pcn.generator.sce***](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Plugins/es.kybele.elastic.models.pcn/src/pcn/generator/sce/) y sigue la siguiente arquitectura:
+The tool is implemented in the [***pcn.generator.sce***](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Plugins/es.kybele.elastic.models.pcn/src/pcn/generator/sce/) package and follows this architecture:
 
-![Arquitectura puente PCN - Smart Contract](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Images/PCN-SmartContract_Arch.png)
+![PCN - Smart Contract Bridge Architecture](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Images/PCN-SmartContract_Arch.png)
 
-## Puente smart contract - PCN
+## Smart Contract - PCN Bridge
 
-Para transformar un smart contract en modelo PCN basta con hacer clic derecho sobre el modelo SmaC objetivo dentro del *Package Explorer* de Eclipse y clicar sobre el botón ***Generate PCN model*** para generar el fichero *.pcn* resultante dentro del directorio *pcn-gen*.
+To transform a smart contract into a PCN model, simply right-click on the target SmaC model in Eclipse's *Package Explorer* and select ***Generate PCN model*** to generate the resulting *.pcn* file in the *pcn-gen* directory.
 
-![Puente smart contract - PCN](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Videos/SmartContract-PCN_Demo.gif)
+![Smart Contract - PCN Bridge](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Videos/SmartContract-PCN_Demo.gif)
 
-La herramienta se implementa en el paquete [***sce.generator.pcn***](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Plugins/org.xtext.ui/src/sce/generator/pcn/) y sigue la siguiente arquitectura:
+The tool is implemented in the [***sce.generator.pcn***](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Plugins/org.xtext.ui/src/sce/generator/pcn/) package and follows this architecture:
 
-![Arquitectura puente smart contract - PCN](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Images/SmartContract-PCN_Arch.png)
+![Smart Contract - PCN Bridge Architecture](https://github.com/alv4rob/PCN-SmartContract-Bridges/blob/main/Images/SmartContract-PCN_Arch.png)
