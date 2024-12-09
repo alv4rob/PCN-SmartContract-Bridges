@@ -13,7 +13,7 @@ class PcnGenTemplates {
 		return
     	'''
     	<?xml version="1.0" encoding="UTF-8"?>
-    	<pcn:PCNDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pcn="http://www.kybele.es/elastic/models/pcn/1.0">
+    	<pcn:PCNDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcn="http://www.kybele.es/elastic/models/pcn/1.0">
     	  «entities»
     	</pcn:PCNDiagram>
     	'''
@@ -86,9 +86,7 @@ class PcnGenTemplates {
 	 */	
 	def String dependencyTemplate(String entityId, String domainRegion, String domainRegionId) {
 		return
-		'''
-		//@diagramEntities.«entityId»/@«domainRegion».«domainRegionId»
-		'''	
+		'''//@diagramEntities.«entityId»/@«domainRegion».«domainRegionId»'''		
 	}
 				
 	/** 
@@ -103,14 +101,14 @@ class PcnGenTemplates {
     	«IF tagNames.size > 0»
 	    	«FOR i : 0..tagNames.size-1»
 	    		«switch tagNames.get(i) {  			
-	    			case "NonmonetaryBenefitsTag": '''      <nonMonetaryBenefits/>'''
-	    			case "NonmonetaryCostsTag": '''      <nonMonetaryCosts/>'''
-	    			case "MonetaryCompensationsTag": '''      <monetaryBenefits/>'''
-	    			case "MonetaryCostsTag": '''	  <monetaryCosts/>>'''
-	    			case "TextTag" : '''      <textualTags tag="«tagParams.get(i).get(0)»"/>'''
-	    			case "ProbabilitiesTag": '''      <probabilitiesTags yesProbability="«tagParams.get(i).get(0)»" noProbability="«tagParams.get(i).get(1)»"/>'''
-	    			case "DelayTimeTag": '''      <delayTimeTags delayTime="«tagParams.get(i).get(0)»"/>'''
-	    			case "SynchronizationTag": '''      <syncTags/>'''
+	    			case "NonmonetaryBenefitsTag": '''<nonMonetaryBenefits/>'''
+	    			case "NonmonetaryCostsTag": '''<nonMonetaryCosts/>'''
+	    			case "MonetaryCompensationsTag": '''<monetaryBenefits/>'''
+	    			case "MonetaryCostsTag": '''<monetaryCosts/>'''
+	    			case "TextTag" : '''<textualTags tag="«tagParams.get(i).get(0)»"/>'''
+	    			case "ProbabilitiesTag": '''<probabilitiesTags yesProbability="«tagParams.get(i).get(0)»" noProbability="«tagParams.get(i).get(1)»"/>'''
+	    			case "DelayTimeTag": '''<delayTimeTags delayTime="«tagParams.get(i).get(0)»"/>'''
+	    			case "SynchronizationTag": '''<syncTags/>'''
 	    		}»
 	    	«ENDFOR»
     	«ENDIF»

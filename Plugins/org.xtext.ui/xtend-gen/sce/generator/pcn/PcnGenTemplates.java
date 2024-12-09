@@ -16,7 +16,7 @@ public class PcnGenTemplates {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
     _builder.newLine();
-    _builder.append("<pcn:PCNDiagram xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" xmlns:pcn=\"http://www.kybele.es/elastic/models/pcn/1.0\">");
+    _builder.append("<pcn:PCNDiagram xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:pcn=\"http://www.kybele.es/elastic/models/pcn/1.0\">");
     _builder.newLine();
     _builder.append("  ");
     _builder.append(entities, "  ");
@@ -182,7 +182,6 @@ public class PcnGenTemplates {
     _builder.append(domainRegion);
     _builder.append(".");
     _builder.append(domainRegionId);
-    _builder.newLineIfNotEmpty();
     return _builder.toString();
   }
 
@@ -209,61 +208,53 @@ public class PcnGenTemplates {
               switch (_get) {
                 case "NonmonetaryBenefitsTag":
                   StringConcatenation _builder_1 = new StringConcatenation();
-                  _builder_1.append("      ");
                   _builder_1.append("<nonMonetaryBenefits/>");
                   _switchResult = _builder_1;
                   break;
                 case "NonmonetaryCostsTag":
                   StringConcatenation _builder_2 = new StringConcatenation();
-                  _builder_2.append("      ");
                   _builder_2.append("<nonMonetaryCosts/>");
                   _switchResult = _builder_2;
                   break;
                 case "MonetaryCompensationsTag":
                   StringConcatenation _builder_3 = new StringConcatenation();
-                  _builder_3.append("      ");
                   _builder_3.append("<monetaryBenefits/>");
                   _switchResult = _builder_3;
                   break;
                 case "MonetaryCostsTag":
                   StringConcatenation _builder_4 = new StringConcatenation();
-                  _builder_4.append("\t  ");
-                  _builder_4.append("<monetaryCosts/>>");
+                  _builder_4.append("<monetaryCosts/>");
                   _switchResult = _builder_4;
                   break;
                 case "TextTag":
                   StringConcatenation _builder_5 = new StringConcatenation();
-                  _builder_5.append("      ");
                   _builder_5.append("<textualTags tag=\"");
                   String _get_1 = tagParams.get((i).intValue()).get(0);
-                  _builder_5.append(_get_1, "      ");
+                  _builder_5.append(_get_1);
                   _builder_5.append("\"/>");
                   _switchResult = _builder_5;
                   break;
                 case "ProbabilitiesTag":
                   StringConcatenation _builder_6 = new StringConcatenation();
-                  _builder_6.append("      ");
                   _builder_6.append("<probabilitiesTags yesProbability=\"");
                   String _get_2 = tagParams.get((i).intValue()).get(0);
-                  _builder_6.append(_get_2, "      ");
+                  _builder_6.append(_get_2);
                   _builder_6.append("\" noProbability=\"");
                   String _get_3 = tagParams.get((i).intValue()).get(1);
-                  _builder_6.append(_get_3, "      ");
+                  _builder_6.append(_get_3);
                   _builder_6.append("\"/>");
                   _switchResult = _builder_6;
                   break;
                 case "DelayTimeTag":
                   StringConcatenation _builder_7 = new StringConcatenation();
-                  _builder_7.append("      ");
                   _builder_7.append("<delayTimeTags delayTime=\"");
                   String _get_4 = tagParams.get((i).intValue()).get(0);
-                  _builder_7.append(_get_4, "      ");
+                  _builder_7.append(_get_4);
                   _builder_7.append("\"/>");
                   _switchResult = _builder_7;
                   break;
                 case "SynchronizationTag":
                   StringConcatenation _builder_8 = new StringConcatenation();
-                  _builder_8.append("      ");
                   _builder_8.append("<syncTags/>");
                   _switchResult = _builder_8;
                   break;

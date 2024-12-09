@@ -177,9 +177,9 @@ public class PcnGenerator {
     						negativeDependenciesSource += template.dependencyTemplate(entityId, domainRegion, domainRegionId) + " ";
     					}
     					break;
-    				}    				
+    				}			
     			}
-    		}  		
+    		}
     	}
     	
     	dependencies.add(standardDependenciesSource);
